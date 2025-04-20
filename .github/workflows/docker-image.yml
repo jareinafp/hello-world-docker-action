@@ -1,0 +1,14 @@
+name: Hola Mundo Workflow
+
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run Hello World Script
+      run: echo "Hola mundo"
